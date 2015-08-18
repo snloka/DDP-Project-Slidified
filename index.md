@@ -1,0 +1,61 @@
+---
+title       : Predicting Childs height
+subtitle    : This predicts the Childs height based on the Parents heights using the Galtons data.
+author      : Subramaniam Loka
+job         : Developing Data Products project Aug 23, 2015
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Try to Answer this
+
+  what could be your childs height? 
+  
+  Here we attempt to estimate the height using statistical linear regression method 
+  and uses the average of both the parents heights.
+  
+  
+  For the height of the mother we multiply by a correction factor to estimate.
+  
+
+--- 
+
+## Statistical Data
+
+
+  This is based on the famous 1885 study of Francis Galton exploring the relationship between the heights of adult children and the heights of their parents.
+
+    The family that the child belongs to, labeled by the numbers from 1 to 204 and 136A
+
+    The father's height, in inches
+
+    The mother's height, in inches
+
+    The gender of the child, male (M) or female (F)
+
+    The height of the child, in inches
+
+    The number of kids in the family of the child
+
+
+The data set has 898 cases.
+
+--- 
+
+## Linear Regression Algorithm
+
+
+  Here we use a Linear Regression to estimate the a straight line for all the childs height. The predictors in are the Father's and Mother's heights. It does multiply the Mother's height with a factor to adjust the data.
+
+--- 
+
+## The Final outcome:
+
+
+  You can go to the website https://snloka-ddp.shinyapps.io/DDPProject to estimate you child's height.
+  Let us know how accurate it is.
+
