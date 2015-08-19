@@ -51,6 +51,19 @@ The data set has 898 cases.
 
   Here we use a Linear Regression to estimate the a straight line for all the childs height. The predictors in are the Father's and Mother's heights. It does multiply the Mother's height with a factor to adjust the data.
 
+```r
+library(devtools)
+library(UsingR)
+data(galton)
+predict1 <- lm(child ~ parent, data=galton)
+predict1$coef
+```
+
+```
+## (Intercept)      parent 
+##  23.9415302   0.6462906
+```
+
 --- 
 
 ## The Final outcome:

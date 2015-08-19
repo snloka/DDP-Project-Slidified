@@ -90,6 +90,17 @@ The number of kids in the family of the child
   <article data-timings="">
     <p>Here we use a Linear Regression to estimate the a straight line for all the childs height. The predictors in are the Father&#39;s and Mother&#39;s heights. It does multiply the Mother&#39;s height with a factor to adjust the data.</p>
 
+<pre><code class="r">library(devtools)
+library(UsingR)
+data(galton)
+predict1 &lt;- lm(child ~ parent, data=galton)
+predict1$coef
+</code></pre>
+
+<pre><code>## (Intercept)      parent 
+##  23.9415302   0.6462906
+</code></pre>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
